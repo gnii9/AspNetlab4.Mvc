@@ -1,0 +1,15 @@
+@model DataHealthViewModel
+
+<div class="container">
+
+    <h2>📊 Data Health Dashboard</h2>
+
+    @foreach (var item in Model.Items)
+    {
+        <div class="card">
+            <b>@item.Check</b> :
+            <span>@item.Status</span>
+        </div>
+    }
+
+</div>

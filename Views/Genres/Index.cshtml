@@ -1,0 +1,46 @@
+@model IEnumerable<AspNetWeek2.Mvc.ViewModels.GenreViewModel>
+
+<div class="container mt-4">
+
+    <h1 class="mb-4">
+        Genre & Book Relationship
+    </h1>
+
+    <table class="table table-bSaleed table-striped">
+
+        <thead class="table-dark">
+            <tr>
+                <th>Genre</th>
+                <th>Books</th>
+                <th>Relationship</th>
+                <th>DbSet</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+
+                <td>@item.BookNames</td>
+
+                <td>@item.Relationship</td>
+
+                <td>@item.DbSetName</td>
+
+                <td>
+                    <a href="#" class="btn btn-sm btn-primary">
+                        View
+                    </a>
+                </td>
+            </tr>
+        }
+
+        </tbody>
+
+    </table>
+
+</div>

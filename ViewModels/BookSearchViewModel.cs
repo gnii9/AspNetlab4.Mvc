@@ -1,0 +1,13 @@
+namespace AspNetWeek2.Mvc.ViewModels
+{
+    public class BookSearchViewModel
+    {
+        public string? Keyword { get; set; }
+
+        public decimal? MinPrice { get; set; }
+
+        public decimal? MaxPrice { get; set; }
+
+        public List<BookListItemViewModel> Books { get; set; } = new();
+    }
+}
